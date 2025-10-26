@@ -1,29 +1,109 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- 🔸 Open Graph (Facebook / LinkedIn) -->
+  <meta property="og:title" content="CleanAF — One-Click Desktop Cleaner for Windows">
+  <meta property="og:description" content="Keeps system icons, moves everything else into 'Current Desktop' and auto-sorts by file type. One click. Zero install.">
+  <meta property="og:image" content="https://thezemmouri.github.io/CleanAF/preview.png">
+  <meta property="og:url" content="https://thezemmouri.github.io/CleanAF/">
+  <meta property="og:type" content="website">
+
+  <!-- 🔸 Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CleanAF — One-Click Desktop Cleaner for Windows">
+  <meta name="twitter:description" content="Keeps system icons, moves everything else into 'Current Desktop' and auto-sorts by file type. One click. Zero install.">
+  <meta name="twitter:image" content="https://thezemmouri.github.io/CleanAF/preview.png">
+
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CleanAF — Desktop Cleaner for Windows</title>
+
   <style>
-    body{font-family:system-ui,Segoe UI,Arial,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.6}
-    .btn{display:inline-block;padding:12px 18px;border-radius:10px;border:1px solid #ddd;text-decoration:none}
-    .hero{background:#fff3ef;border:1px solid #ffd7cc;border-radius:16px;padding:20px}
-    small{color:#666}
+    body {
+      font-family: system-ui, Segoe UI, Arial, sans-serif;
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 16px;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    .hero {
+      text-align: center;
+      background: #fff3ef;
+      border: 1px solid #ffd7cc;
+      border-radius: 16px;
+      padding: 50px 20px;
+      margin-bottom: 40px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      background: #0078ff;
+      color: white;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+    .btn:hover {
+      background: #005ccc;
+    }
+    small {
+      color: #666;
+      display: block;
+      margin-top: 15px;
+      font-size: 0.9rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 40px;
+    }
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      color: #888;
+      font-size: 0.85rem;
+    }
   </style>
 </head>
+
 <body>
-  <h1>🧹 CleanAF — One-Click Desktop Cleaner (Windows)</h1>
+  <!-- 🚀 Hero Section -->
   <div class="hero">
-    <p>Keeps system icons, moves the rest to <em>Current Desktop</em>, auto-sorts by file type.</p>
-    <p><a class="btn" href="https://github.com/YOUR_USERNAME/CleanAF/releases/latest">⬇ Download CleanAF v1.0.0</a></p>
+    <h1>🧹 CleanAF</h1>
+    <p>One-Click Desktop Cleaner for Windows</p>
+    <a class="btn" href="https://github.com/TheZemmouri/CleanAF/releases/latest" target="_blank" rel="noopener noreferrer">
+      ⬇ Download CleanAF v1.0.0
+    </a>
     <small>No install. No internet required.</small>
   </div>
+
+  <!-- ✨ Features -->
   <h2>✨ Features</h2>
   <ul>
     <li>Keeps Recycle Bin / This PC</li>
     <li>Sorts into PDF, Word, Images, etc.</li>
     <li>Duplicates auto-numbered; timestamped runs</li>
   </ul>
-  <p><small>© 2025 Zemmouri Digital Productions</small></p>
+
+  <!-- 🧾 Optional SHA-256 Verification -->
+  <h2>🔐 Verify Download (optional)</h2>
+  <pre id="hash">SHA-256: d8d291813667f2a99d30cfb6d0460d2cb5a4201cae7fc9cb610cb10a0b5e33df</pre>
+  <button onclick="navigator.clipboard.writeText(document.getElementById('hash').innerText)">
+    📋 Copy
+  </button>
+
+  <!-- 🦶 Footer -->
+  <footer>
+    © 2025 Zemmouri Digital Productions
+  </footer>
 </body>
 </html>
